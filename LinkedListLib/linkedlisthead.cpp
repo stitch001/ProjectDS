@@ -19,6 +19,7 @@ void traverse(LinkedList head) {
         cout << p->val << "----";
         p = p->next;
     }
+    cout << endl;
 }
 
 LinkedList createLinkedList(int arr[],int size)

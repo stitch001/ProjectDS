@@ -127,6 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LinkedListLib\LinkedListLib.vcxproj">
+      <Project>{82480c47-4c79-4057-97c2-16cf82af0e79}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myStack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="myStack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
