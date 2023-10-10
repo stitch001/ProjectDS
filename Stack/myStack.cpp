@@ -7,8 +7,14 @@ void stackTest()
 	push(&s, 1);
 	push(&s, 2);
 	pop(&s);
-	push(&s, 3);
-	std::cout << "Õ»¶¥ÔªËØ£º" << top(s) << std::endl;
+	push(&s, 4);
+	std::cout << "Stack Top£º" << top(s) << std::endl;
+	pop(&s);
+	push(&s, 5);
+	push(&s, 6);
+	pop(&s);
+	pop(&s);
+	std::cout << "Stack Top£º" << top(s) << std::endl;
 }
 
 bool isEmpty(stack s)

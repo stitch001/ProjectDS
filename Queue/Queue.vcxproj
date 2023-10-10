@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{924c3d03-a021-4ec1-a78d-f8d450eb5886}</ProjectGuid>
-    <RootNamespace>Main</RootNamespace>
+    <ProjectGuid>{6d939cba-4634-4f32-aa4a-32dc41d8917a}</ProjectGuid>
+    <RootNamespace>Queue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -40,7 +40,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -127,18 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
+    <ClInclude Include="myQueue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LinkedListLib\LinkedListLib.vcxproj">
-      <Project>{82480c47-4c79-4057-97c2-16cf82af0e79}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Queue\Queue.vcxproj">
-      <Project>{6d939cba-4634-4f32-aa4a-32dc41d8917a}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Stack\Stack.vcxproj">
-      <Project>{88e0394c-c7d9-4111-8cd1-049fdd0b80b9}</Project>
-    </ProjectReference>
+    <ClCompile Include="queue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

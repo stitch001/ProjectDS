@@ -4,10 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Main", "Main\Main.vcxproj", "{924C3D03-A021-4EC1-A78D-F8D450EB5886}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A} = {6D939CBA-4634-4F32-AA4A-32DC41D8917A}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedListLib", "LinkedListLib\LinkedListLib.vcxproj", "{82480C47-4C79-4057-97C2-16CF82AF0E79}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack", "Stack\Stack.vcxproj", "{88E0394C-C7D9-4111-8CD1-049FDD0B80B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Queue", "Queue\Queue.vcxproj", "{6D939CBA-4634-4F32-AA4A-32DC41D8917A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{3E43413A-C2E6-45EB-8CC5-BB9AF92185A9}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+		Readme_zh.md = Readme_zh.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +52,14 @@ Global
 		{88E0394C-C7D9-4111-8CD1-049FDD0B80B9}.Release|x64.Build.0 = Release|x64
 		{88E0394C-C7D9-4111-8CD1-049FDD0B80B9}.Release|x86.ActiveCfg = Release|Win32
 		{88E0394C-C7D9-4111-8CD1-049FDD0B80B9}.Release|x86.Build.0 = Release|Win32
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Debug|x64.ActiveCfg = Debug|x64
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Debug|x64.Build.0 = Debug|x64
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Debug|x86.ActiveCfg = Debug|Win32
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Debug|x86.Build.0 = Debug|Win32
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Release|x64.ActiveCfg = Release|x64
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Release|x64.Build.0 = Release|x64
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Release|x86.ActiveCfg = Release|Win32
+		{6D939CBA-4634-4F32-AA4A-32DC41D8917A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

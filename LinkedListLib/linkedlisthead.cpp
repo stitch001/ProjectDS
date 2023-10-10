@@ -25,6 +25,9 @@ void traverse(LinkedList head) {
 LinkedList createLinkedList(int arr[],int size)
 {
     LinkedList head = (ListNode*)malloc(sizeof(ListNode));
+    if (head == NULL) {
+        return NULL;
+    }
     head->next = NULL;
     head->val = -1;
     for (int i = size - 1; i >= 0; i--) {
